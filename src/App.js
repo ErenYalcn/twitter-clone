@@ -5,7 +5,7 @@ import Sidebar from "components/Sidebar";
 function App() {
   return (
     <div className="App">
-      <div className="max-w-7xl flex bg-black mx-auto h-screen text-white">
+      <div className="max-w-7xl flex mx-auto h-screen text-white">
         <Sidebar />
         <Content />
         <RightBar />
