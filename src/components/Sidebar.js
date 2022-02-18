@@ -1,5 +1,6 @@
 import React from 'react'
 import { Icon } from 'Icons'
+import { NavLink } from 'react-router-dom'
 
 export default function Sidebar() {
   return (
@@ -14,26 +15,63 @@ export default function Sidebar() {
             </span>
           </div>
           <nav className='flex flex-col gap-y-0 mt-2'>
-            <a className='flex gap-x-4 items-center hover:bg-sgray hover:bg-opacity-[0.1] max-w-max p-4 py-3 rounded-full' href="#">
-              <Icon name="home" size={26} />
+            <ul>
+              <li>
+            <NavLink to={"/"} activeClassName="!font-semibold" exact className='flex gap-x-4 items-center hover:bg-sgray hover:bg-opacity-[0.1] max-w-max p-4 py-3 rounded-full'>
+            {window.location.href === 'http://localhost:3000/' ? <Icon name="homeact"/> : <Icon name="home"/>}
               <span className='text-xl text-sgray hidden lg:block'>Anasayfa</span>
-            </a>
-            <a className='flex gap-x-4 items-center hover:bg-sgray hover:bg-opacity-[0.1] max-w-max p-4 py-3 rounded-full' href="#">
-            <Icon name="hash" size={26} />
+            </NavLink>
+            </li>
+
+            <li>
+            <NavLink to={"/explore"} activeClassName="!font-semibold" className='flex gap-x-4 items-center hover:bg-sgray hover:bg-opacity-[0.1] max-w-max p-4 py-3 rounded-full' href="#">
+            {window.location.href === 'http://localhost:3000/explore' ? <Icon name="hashact" /> : <Icon name="hash" />}
               <span className='text-xl text-sgray hidden lg:block'>Keşfet</span>
-            </a>
-            <a className='flex gap-x-4 items-center hover:bg-sgray hover:bg-opacity-[0.1] max-w-max p-4 py-3 rounded-full' href="#">
-            <Icon name="notifi" size={26} />
-              <span className='text-xl text-sgray hidden lg:block'>Bildirimler</span></a>
-              <a className='flex gap-x-4 items-center hover:bg-sgray hover:bg-opacity-[0.1] max-w-max p-4 py-3 rounded-full' href="#">
-            <Icon name="message" size={26} />
-              <span className='text-xl text-sgray hidden lg:block'>Mesajlar</span></a>
-              <a className='flex gap-x-4 items-center hover:bg-sgray hover:bg-opacity-[0.1] max-w-max p-4 py-3 rounded-full' href="#">
-            <Icon name="profile" size={26} />
-              <span className='text-xl text-sgray hidden lg:block'>Profil</span></a>
-              <a className='flex gap-x-4 items-center hover:bg-sgray hover:bg-opacity-[0.1] max-w-max p-4 py-3 rounded-full' href="#">
-            <Icon name="more" size={26} />
-              <span className='text-xl text-sgray hidden lg:block'>Daha fazla</span></a>
+            </NavLink>
+            </li>
+
+            <li>
+            <NavLink to={"/notification"} activeClassName="!font-semibold" className='flex gap-x-4 items-center hover:bg-sgray hover:bg-opacity-[0.1] max-w-max p-4 py-3 rounded-full' href="#">
+            {window.location.href === 'http://localhost:3000/notification' ? <Icon name="notifiact" /> : <Icon name="notifi" />}
+              <span className='text-xl text-sgray hidden lg:block'>Bildirimler</span>
+              </NavLink>
+              </li>
+
+              <li>
+              <NavLink to={"/messages"} activeClassName="!font-semibold" className='flex gap-x-4 items-center hover:bg-sgray hover:bg-opacity-[0.1] max-w-max p-4 py-3 rounded-full' href="#">
+            {window.location.href === 'http://localhost:3000/messages' ? <Icon name="messageact" /> : <Icon name="message" />}
+              <span className='text-xl text-sgray hidden lg:block'>Mesajlar</span>
+              </NavLink>
+              </li>
+
+              <li>
+              <NavLink to={"/bookmarks"} activeClassName="!font-semibold" className='flex gap-x-4 items-center hover:bg-sgray hover:bg-opacity-[0.1] max-w-max p-4 py-3 rounded-full' href="#">
+            {window.location.href === 'http://localhost:3000/bookmarks' ? <Icon name="bookmarkact" /> : <Icon name="bookmark" />}
+              <span className='text-xl text-sgray hidden lg:block'>Yer İşaretleri</span>
+              </NavLink>
+              </li>
+
+              <li>
+              <NavLink to={"/lists"} activeClassName="!font-semibold" className='flex gap-x-4 items-center hover:bg-sgray hover:bg-opacity-[0.1] max-w-max p-4 py-3 rounded-full' href="#">
+            {window.location.href === 'http://localhost:3000/lists' ? <Icon name="listact" /> : <Icon name="list" />}
+              <span className='text-xl text-sgray hidden lg:block'>Listeler</span>
+              </NavLink>
+              </li>
+
+              <li>
+              <NavLink to={"/profile"} activeClassName="!font-semibold" className='flex gap-x-4 items-center hover:bg-sgray hover:bg-opacity-[0.1] max-w-max p-4 py-3 rounded-full' href="#">
+            {window.location.href === 'http://localhost:3000/profile' ? <Icon name="profileact" /> : <Icon name="profile" />}
+              <span className='text-xl text-sgray hidden lg:block'>Profil</span>
+              </NavLink>
+              </li>
+              
+              <li>
+              <NavLink to={"/more"} activeClassName="!font-semibold" className='flex gap-x-4 items-center hover:bg-sgray hover:bg-opacity-[0.1] max-w-max p-4 py-3 rounded-full' href="#">
+                <Icon name="more" size={26} />
+                <span className='text-xl text-sgray hidden lg:block'>Daha fazla</span>
+              </NavLink>
+              </li>
+            </ul>
           </nav>
           <button className='bg-primary text-[17px] font-semibold p-4 rounded-full max-w-max lg:max-w-none lg:w-[212px] mt-4 shadow-xs hover:bg-dblue transition-all'>
             <span className='hidden lg:block'>Tweetle</span>
