@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Followlist() {
   return (
-    <div className='mt-2 bg-gray text-black rounded-md ml-2'>
+    <div className='mt-2 bg-gray text-black rounded-md ml-2 px-2'>
         <h3 className='text-xl font-bold text-sgray mx-2 pt-3 mb-4'>Kimi takip etmeli</h3>
         <div className='flex justify-between items-center mb-3'>
             <div className='flex gap-x-3 mx-2 pb-2'>

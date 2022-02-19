@@ -85,7 +85,7 @@ export default function Sidebar() {
                 <img className='w-[40px] h-[40px] rounded-full' src="https://pbs.twimg.com/profile_images/1296943658281979912/2ucPJ6wG_x96.jpg" />
                 <div className='flex flex-col '>
                     <span className='text-sgray font-semibold hidden lg:block'>Eren Yalçın</span>
-                    <span className='text-sm text-ts hidden lg:block'>@erenyalccn</span>
+                    <span className='text-xs text-ts hidden lg:block'>@erenyalccn</span>
                 </div>
             </div>
             <span className='flex justify-between ml-8 mr-4 hidden lg:block'><Icon name="dots" /></span>

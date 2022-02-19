@@ -2,7 +2,7 @@ import React from 'react'
 import { Icon } from 'Icons'
 export default function Docket() {
   return (
-    <div className='mt-2 bg-gray text-black rounded-md ml-2'>
+    <div className='mt-2 bg-gray text-black rounded-md ml-2 px-2'>
         <div className='flex items-center mx-2 mb-4 pt-3 gap-x-3'>
             <h3 className='text-xl font-bold text-sgray'>İlgini çekebilecek gündemler</h3>
             <Icon name="settings" size={22}/>
