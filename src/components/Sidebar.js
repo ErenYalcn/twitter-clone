@@ -18,42 +18,42 @@ export default function Sidebar() {
             <ul>
               <li>
             <NavLink to={"/"} activeClassName="!font-semibold" exact className='flex gap-x-4 items-center hover:bg-sgray hover:bg-opacity-[0.1] max-w-max p-4 py-3 rounded-full'>
-            {window.location.href === 'http://localhost:3000/' ? <Icon name="homeact"/> : <Icon name="home"/>}
+            {window.location.href === 'https://twitter-clone-byerenyalcn.netlify.app/' ? <Icon name="homeact"/> : <Icon name="home"/>}
               <span className='text-xl text-sgray hidden lg:block'>Anasayfa</span>
             </NavLink>
             </li>
 
             <li>
             <NavLink to={"/explore"} activeClassName="!font-semibold" className='flex gap-x-4 items-center hover:bg-sgray hover:bg-opacity-[0.1] max-w-max p-4 py-3 rounded-full' href="#">
-            {window.location.href === 'http://localhost:3000/explore' ? <Icon name="hashact" /> : <Icon name="hash" />}
+            {window.location.href === 'https://twitter-clone-byerenyalcn.netlify.app/explore' ? <Icon name="hashact" /> : <Icon name="hash" />}
               <span className='text-xl text-sgray hidden lg:block'>Keşfet</span>
             </NavLink>
             </li>
 
             <li>
             <NavLink to={"/notification"} activeClassName="!font-semibold" className='flex gap-x-4 items-center hover:bg-sgray hover:bg-opacity-[0.1] max-w-max p-4 py-3 rounded-full' href="#">
-            {window.location.href === 'http://localhost:3000/notification' ? <Icon name="notifiact" /> : <Icon name="notifi" />}
+            {window.location.href === 'https://twitter-clone-byerenyalcn.netlify.app/notification' ? <Icon name="notifiact" /> : <Icon name="notifi" />}
               <span className='text-xl text-sgray hidden lg:block'>Bildirimler</span>
               </NavLink>
               </li>
 
               <li>
               <NavLink to={"/messages"} activeClassName="!font-semibold" className='flex gap-x-4 items-center hover:bg-sgray hover:bg-opacity-[0.1] max-w-max p-4 py-3 rounded-full' href="#">
-            {window.location.href === 'http://localhost:3000/messages' ? <Icon name="messageact" /> : <Icon name="message" />}
+            {window.location.href === 'https://twitter-clone-byerenyalcn.netlify.app/messages' ? <Icon name="messageact" /> : <Icon name="message" />}
               <span className='text-xl text-sgray hidden lg:block'>Mesajlar</span>
               </NavLink>
               </li>
 
               <li>
               <NavLink to={"/bookmarks"} activeClassName="!font-semibold" className='flex gap-x-4 items-center hover:bg-sgray hover:bg-opacity-[0.1] max-w-max p-4 py-3 rounded-full' href="#">
-            {window.location.href === 'http://localhost:3000/bookmarks' ? <Icon name="bookmarkact" /> : <Icon name="bookmark" />}
+            {window.location.href === 'https://twitter-clone-byerenyalcn.netlify.app/bookmarks' ? <Icon name="bookmarkact" /> : <Icon name="bookmark" />}
               <span className='text-xl text-sgray hidden lg:block'>Yer İşaretleri</span>
               </NavLink>
               </li>
 
               <li>
               <NavLink to={"/lists"} activeClassName="!font-semibold" className='flex gap-x-4 items-center hover:bg-sgray hover:bg-opacity-[0.1] max-w-max p-4 py-3 rounded-full' href="#">
-            {window.location.href === 'http://localhost:3000/lists' ? <Icon name="listact" /> : <Icon name="list" />}
+            {window.location.href === 'https://twitter-clone-byerenyalcn.netlify.app/lists' ? <Icon name="listact" /> : <Icon name="list" />}
               <span className='text-xl text-sgray hidden lg:block'>Listeler</span>
               </NavLink>
               </li>
