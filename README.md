@@ -129,7 +129,7 @@ _You must install the following:._
 
 Eren YALÇIN  - erenyalcn09@gmail.com
 
-Project Link: [https://github.com/ErenYalcn/spotify-react-clone](https://github.com/ErenYalcn/spotify-react-clone)
+Project Link: [https://github.com/ErenYalcn/twitter-clone](https://github.com/ErenYalcn/twitter-clone)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
