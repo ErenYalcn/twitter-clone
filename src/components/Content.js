@@ -1,10 +1,17 @@
 import React from 'react'
-import { Icon } from 'Icons'
 import TweetBox from './TweetBox'
 import Header from './Header'
+import db from '../firebase'
+import { useState,useEffect } from 'react'
+import TweetList from './TweetList'
 
 export default function Content() {
-
+  const [tweets, setTweets] = useState([]);
+    useEffect(() => {
+      db.collection('tweets')
+      .orderBy('timeTweet', 'desc')
+      .onSnapshot(snapshot => setTweets(snapshot.docs.map(doc => doc.data())))
+    },[])
 
 
   return (
@@ -14,6 +21,9 @@ export default function Content() {
             <Header />
           </header>
           <TweetBox />
+        </div>
+        <div className='text-sgray'>
+        <TweetList tweets={tweets} />
         </div>
     </div>
   )

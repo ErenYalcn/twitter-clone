@@ -14,6 +14,9 @@ module.exports = {
         ts: '#526371',
         hg: '#E7E7E8',
         br: '#dedede',
+        tw: '#536471',
+        g:'#00BA7C',
+        r:'#F9197F'
       }
 
     },
